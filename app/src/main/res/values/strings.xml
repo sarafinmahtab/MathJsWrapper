@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MathJsWrapper</string>
+    <string name="test_result">Test Result</string>
+    <string name="_0_0">0.0</string>
+    <string name="execution_time_d">Execution Time: %sms</string>
+</resources>
