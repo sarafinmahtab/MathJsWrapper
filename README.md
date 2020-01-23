@@ -1,6 +1,41 @@
 # MathJs Wrapper
 A wrapper of the mathjs.org (https://mathjs.org/) JavaScript library for Android to evaluate math expressions.
 
+
+## Dependency
+Choose your dependency to use this library.
+
+#### Gradle
+
+Include the library in your ``build.gradle``
+
+```
+dependencies {
+    implementation 'com.sarafinmahtab:mathjswrapper:1.0'
+}
+```
+
+#### maven
+
+```
+<dependency>
+	<groupId>com.sarafinmahtab</groupId>
+	<artifactId>mathjswrapper</artifactId>
+	<version>1.0</version>
+	<type>pom</type>
+</dependency>
+```
+
+#### ivy
+
+```
+<dependency org="com.sarafinmahtab" name="mathjswrapper" rev="1.0">
+	<artifact name="mathjswrapper" ext="pom"></artifact>
+</dependency>
+```
+
+
+
 ## Implementation
 
 #### Initialization
@@ -46,7 +81,7 @@ val expression = "a / (b + c)" // 2.718
 val list = mathJsWrapper.getExpressionNodes(expression, NodeType.SymbolNode) // ["a","b","c"]
 ```
 
-#### Remove MathJsWapper in `onDestroy()`
+#### Remove MathJsWapper after being used
 
 Deallocate instances after being used.
 ```
