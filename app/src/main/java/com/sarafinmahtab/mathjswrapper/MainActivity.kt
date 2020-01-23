@@ -32,8 +32,8 @@ class MainActivity : AppCompatActivity() {
                 val map = HashMap<String, Any>()
                 map["num1"] = BigDecimal(entryA.text.toString())
                 map["string2"] = entryB.text.toString()
-                map["int0"] = entryC.text.toString().toInt()
-                map["float0"] = entryD.text.toString().toFloat()
+                map["float0"] = entryC.text.toString().toFloat()
+                map["int0"] = entryD.text.toString().toInt()
 
                 startEval(evaluationEt.text.toString(), map)
             } catch (e: Exception) {
@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
 
         val measuredTime = measureTimeMillis {
             val result = mathJsWrapper.eval(expression, map)
-            resultTv.text = result
+            resultTv.text = BigDecimal(result).toPlainString()
         }
 
         varListTv.text =
