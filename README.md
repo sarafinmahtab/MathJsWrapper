@@ -1,6 +1,10 @@
 # MathJs Wrapper
 A wrapper of the mathjs.org (https://mathjs.org/) JavaScript library for Android to evaluate math expressions.
 
+This project is based on *MathJs-Android*(https://github.com/niltonvasques/mathjs-android). 
+But it is up-to-date with additional features such as `math.eval(expression, scope)` and 
+`math.traverse()` which returns the list of specified node.
+
 
 ## Dependency
 Choose your dependency to use this library.
